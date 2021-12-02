@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Nucleus.Auditing\Nucleus.Auditing.csproj" />
+    <ProjectReference Include="..\Nucleus.Core\Nucleus.Core.csproj" />
+    <ProjectReference Include="..\Nucleus.EventBus\Nucleus.EventBus.csproj" />
+    <ProjectReference Include="..\Nucleus.ExceptionHandling\Nucleus.ExceptionHandling.csproj" />
+    <ProjectReference Include="..\Nucleus.Guids\Nucleus.Guids.csproj" />
+    <ProjectReference Include="..\Nucleus.MultiTenancy\Nucleus.MultiTenancy.csproj" />
+    <ProjectReference Include="..\Nucleus.ObjectMapping\Nucleus.ObjectMapping.csproj" />
+    <ProjectReference Include="..\Nucleus.Specifications\Nucleus.Specifications.csproj" />
+    <ProjectReference Include="..\Nucleus.Threading\Nucleus.Threading.csproj" />
+    <ProjectReference Include="..\Nucleus.Timing\Nucleus.Timing.csproj" />
+    <ProjectReference Include="..\Nucleus.Uow\Nucleus.Uow.csproj" />
+  </ItemGroup>
+
+</Project>

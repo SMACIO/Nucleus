@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Nucleus.BackgroundWorkers\Nucleus.BackgroundWorkers.csproj" />
+    <ProjectReference Include="..\Nucleus.Core\Nucleus.Core.csproj" />
+    <ProjectReference Include="..\Nucleus.DistributedLocking.Abstractions\Nucleus.DistributedLocking.Abstractions.csproj" />
+    <ProjectReference Include="..\Nucleus.Guids\Nucleus.Guids.csproj" />
+    <ProjectReference Include="..\Nucleus.Json\Nucleus.Json.csproj" />
+    <ProjectReference Include="..\Nucleus.Threading\Nucleus.Threading.csproj" />
+    <ProjectReference Include="..\Nucleus.Timing\Nucleus.Timing.csproj" />
+    <ProjectReference Include="..\Nucleus.Uow\Nucleus.Uow.csproj" />
+  </ItemGroup>
+
+</Project>

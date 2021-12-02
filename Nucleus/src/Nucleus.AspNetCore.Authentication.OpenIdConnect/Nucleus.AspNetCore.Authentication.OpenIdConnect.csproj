@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+	  <OutputType>Library</OutputType>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.OpenIdConnect" Version="6.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Nucleus.AspNetCore.Authentication.OAuth\Nucleus.AspNetCore.Authentication.OAuth.csproj" />
+    <ProjectReference Include="..\Nucleus.AspNetCore.MultiTenancy\Nucleus.AspNetCore.MultiTenancy.csproj" />
+    <ProjectReference Include="..\Nucleus.Core\Nucleus.Core.csproj" />
+    <ProjectReference Include="..\Nucleus.MultiTenancy\Nucleus.MultiTenancy.csproj" />
+  </ItemGroup>
+
+</Project>

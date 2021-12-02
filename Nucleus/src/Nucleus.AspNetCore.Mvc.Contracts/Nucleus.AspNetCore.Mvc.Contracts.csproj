@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Nucleus.Ddd.Application.Contracts\Nucleus.Ddd.Application.Contracts.csproj" />
+    <ProjectReference Include="..\Nucleus.Localization\Nucleus.Localization.csproj" />
+  </ItemGroup>
+
+</Project>

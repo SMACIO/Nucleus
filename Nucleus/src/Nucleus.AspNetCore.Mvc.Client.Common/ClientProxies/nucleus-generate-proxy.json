@@ -1,0 +1,170 @@
+﻿{
+  "modules": {
+    "nucleus": {
+      "rootPath": "nucleus",
+      "remoteServiceName": "nucleus",
+      "controllers": {
+        "Pages.Nucleus.MultiTenancy.NucleusTenantController": {
+          "controllerName": "NucleusTenant",
+          "controllerGroupName": "NucleusTenant",
+          "type": "Pages.Nucleus.MultiTenancy.NucleusTenantController",
+          "interfaces": [
+            {
+              "type": "Volo.Nucleus.AspNetCore.Mvc.MultiTenancy.INucleusTenantAppService"
+            }
+          ],
+          "actions": {
+            "FindTenantByNameAsyncByName": {
+              "uniqueName": "FindTenantByNameAsyncByName",
+              "name": "FindTenantByNameAsync",
+              "httpMethod": "GET",
+              "url": "api/nucleus/multi-tenancy/tenants/by-name/{name}",
+              "supportedVersions": [],
+              "parametersOnMethod": [
+                {
+                  "name": "name",
+                  "typeAsString": "System.String, System.Private.CoreLib",
+                  "type": "System.String",
+                  "typeSimple": "string",
+                  "isOptional": false,
+                  "defaultValue": null
+                }
+              ],
+              "parameters": [
+                {
+                  "nameOnMethod": "name",
+                  "name": "name",
+                  "jsonName": null,
+                  "type": "System.String",
+                  "typeSimple": "string",
+                  "isOptional": false,
+                  "defaultValue": null,
+                  "constraintTypes": [],
+                  "bindingSourceId": "Path",
+                  "descriptorName": ""
+                }
+              ],
+              "returnValue": {
+                "type": "Volo.Nucleus.AspNetCore.Mvc.MultiTenancy.FindTenantResultDto",
+                "typeSimple": "Volo.Nucleus.AspNetCore.Mvc.MultiTenancy.FindTenantResultDto"
+              },
+              "allowAnonymous": null,
+              "implementFrom": "Volo.Nucleus.AspNetCore.Mvc.MultiTenancy.INucleusTenantAppService"
+            },
+            "FindTenantByIdAsyncById": {
+              "uniqueName": "FindTenantByIdAsyncById",
+              "name": "FindTenantByIdAsync",
+              "httpMethod": "GET",
+              "url": "api/nucleus/multi-tenancy/tenants/by-id/{id}",
+              "supportedVersions": [],
+              "parametersOnMethod": [
+                {
+                  "name": "id",
+                  "typeAsString": "System.Guid, System.Private.CoreLib",
+                  "type": "System.Guid",
+                  "typeSimple": "string",
+                  "isOptional": false,
+                  "defaultValue": null
+                }
+              ],
+              "parameters": [
+                {
+                  "nameOnMethod": "id",
+                  "name": "id",
+                  "jsonName": null,
+                  "type": "System.Guid",
+                  "typeSimple": "string",
+                  "isOptional": false,
+                  "defaultValue": null,
+                  "constraintTypes": [],
+                  "bindingSourceId": "Path",
+                  "descriptorName": ""
+                }
+              ],
+              "returnValue": {
+                "type": "Volo.Nucleus.AspNetCore.Mvc.MultiTenancy.FindTenantResultDto",
+                "typeSimple": "Volo.Nucleus.AspNetCore.Mvc.MultiTenancy.FindTenantResultDto"
+              },
+              "allowAnonymous": null,
+              "implementFrom": "Volo.Nucleus.AspNetCore.Mvc.MultiTenancy.INucleusTenantAppService"
+            }
+          }
+        },
+        "Volo.Nucleus.AspNetCore.Mvc.ApplicationConfigurations.NucleusApplicationConfigurationController": {
+          "controllerName": "NucleusApplicationConfiguration",
+          "controllerGroupName": "NucleusApplicationConfiguration",
+          "type": "Volo.Nucleus.AspNetCore.Mvc.ApplicationConfigurations.NucleusApplicationConfigurationController",
+          "interfaces": [
+            {
+              "type": "Volo.Nucleus.AspNetCore.Mvc.ApplicationConfigurations.INucleusApplicationConfigurationAppService"
+            }
+          ],
+          "actions": {
+            "GetAsync": {
+              "uniqueName": "GetAsync",
+              "name": "GetAsync",
+              "httpMethod": "GET",
+              "url": "api/nucleus/application-configuration",
+              "supportedVersions": [],
+              "parametersOnMethod": [],
+              "parameters": [],
+              "returnValue": {
+                "type": "Volo.Nucleus.AspNetCore.Mvc.ApplicationConfigurations.ApplicationConfigurationDto",
+                "typeSimple": "Volo.Nucleus.AspNetCore.Mvc.ApplicationConfigurations.ApplicationConfigurationDto"
+              },
+              "allowAnonymous": null,
+              "implementFrom": "Volo.Nucleus.AspNetCore.Mvc.ApplicationConfigurations.INucleusApplicationConfigurationAppService"
+            }
+          }
+        },
+        "Volo.Nucleus.AspNetCore.Mvc.ApiExploring.NucleusApiDefinitionController": {
+          "controllerName": "NucleusApiDefinition",
+          "controllerGroupName": "NucleusApiDefinition",
+          "type": "Volo.Nucleus.AspNetCore.Mvc.ApiExploring.NucleusApiDefinitionController",
+          "interfaces": [],
+          "actions": {
+            "GetByModel": {
+              "uniqueName": "GetByModel",
+              "name": "Get",
+              "httpMethod": "GET",
+              "url": "api/nucleus/api-definition",
+              "supportedVersions": [],
+              "parametersOnMethod": [
+                {
+                  "name": "model",
+                  "typeAsString": "Volo.Nucleus.Http.Modeling.ApplicationApiDescriptionModelRequestDto, Volo.Nucleus.Http",
+                  "type": "Volo.Nucleus.Http.Modeling.ApplicationApiDescriptionModelRequestDto",
+                  "typeSimple": "Volo.Nucleus.Http.Modeling.ApplicationApiDescriptionModelRequestDto",
+                  "isOptional": false,
+                  "defaultValue": null
+                }
+              ],
+              "parameters": [
+                {
+                  "nameOnMethod": "model",
+                  "name": "IncludeTypes",
+                  "jsonName": null,
+                  "type": "System.Boolean",
+                  "typeSimple": "boolean",
+                  "isOptional": false,
+                  "defaultValue": null,
+                  "constraintTypes": null,
+                  "bindingSourceId": "ModelBinding",
+                  "descriptorName": "model"
+                }
+              ],
+              "returnValue": {
+                "type": "Volo.Nucleus.Http.Modeling.ApplicationApiDescriptionModel",
+                "typeSimple": "Volo.Nucleus.Http.Modeling.ApplicationApiDescriptionModel"
+              },
+              "allowAnonymous": null,
+              "implementFrom": "Volo.Nucleus.AspNetCore.Mvc.ApiExploring.NucleusApiDefinitionController"
+            }
+          }
+        }
+      }
+    }
+  },
+  "types": {}
+}
+

@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Nucleus.ExceptionHandling\Nucleus.ExceptionHandling.csproj" />
+    <ProjectReference Include="..\Nucleus.Localization.Abstractions\Nucleus.Localization.Abstractions.csproj" />
+    <ProjectReference Include="..\Nucleus.Localization\Nucleus.Localization.csproj" />
+    <ProjectReference Include="..\Nucleus.VirtualFileSystem\Nucleus.VirtualFileSystem.csproj" />
+  </ItemGroup>
+
+</Project>

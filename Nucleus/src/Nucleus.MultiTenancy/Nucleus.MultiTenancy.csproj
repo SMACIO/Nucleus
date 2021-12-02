@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="JetBrains.Annotations" Version="2021.2.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\Nucleus.Core\Nucleus.Core.csproj" />
+	  <ProjectReference Include="..\Nucleus.Data\Nucleus.Data.csproj" />
+	  <ProjectReference Include="..\Nucleus.EventBus.Abstractions\Nucleus.EventBus.Abstractions.csproj" />
+	  <ProjectReference Include="..\Nucleus.Security\Nucleus.Security.csproj" />
+	</ItemGroup>
+
+</Project>

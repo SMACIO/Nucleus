@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Nucleus.Core\Nucleus.Core.csproj" />
+    <ProjectReference Include="..\Nucleus.Http.Abstractions\Nucleus.Http.Abstractions.csproj" />
+    <ProjectReference Include="..\Nucleus.Json\Nucleus.Json.csproj" />
+    <ProjectReference Include="..\Nucleus.Minify\Nucleus.Minify.csproj" />
+  </ItemGroup>
+
+</Project>

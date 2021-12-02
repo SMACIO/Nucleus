@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Nucleus.Auditing.Contracts\Nucleus.Auditing.Contracts.csproj" />
+    <ProjectReference Include="..\Nucleus.Data\Nucleus.Data.csproj" />
+    <ProjectReference Include="..\Nucleus.Json\Nucleus.Json.csproj" />
+    <ProjectReference Include="..\Nucleus.MultiTenancy\Nucleus.MultiTenancy.csproj" />
+    <ProjectReference Include="..\Nucleus.Threading\Nucleus.Threading.csproj" />
+    <ProjectReference Include="..\Nucleus.Timing\Nucleus.Timing.csproj" />
+  </ItemGroup>
+
+</Project>

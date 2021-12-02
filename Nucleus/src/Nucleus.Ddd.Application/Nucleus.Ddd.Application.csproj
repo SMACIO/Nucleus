@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authorization" Version="6.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Nucleus.Auditing.Contracts\Nucleus.Auditing.Contracts.csproj" />
+    <ProjectReference Include="..\Nucleus.Authorization\Nucleus.Authorization.csproj" />
+    <ProjectReference Include="..\Nucleus.Ddd.Application.Contracts\Nucleus.Ddd.Application.Contracts.csproj" />
+    <ProjectReference Include="..\Nucleus.Ddd.Domain\Nucleus.Ddd.Domain.csproj" />
+    <ProjectReference Include="..\Nucleus.Features\Nucleus.Features.csproj" />
+    <ProjectReference Include="..\Nucleus.GlobalFeatures\Nucleus.GlobalFeatures.csproj" />
+    <ProjectReference Include="..\Nucleus.Guids\Nucleus.Guids.csproj" />
+    <ProjectReference Include="..\Nucleus.Http.Abstractions\Nucleus.Http.Abstractions.csproj" />
+    <ProjectReference Include="..\Nucleus.ObjectMapping\Nucleus.ObjectMapping.csproj" />
+    <ProjectReference Include="..\Nucleus.Settings\Nucleus.Settings.csproj" />
+    <ProjectReference Include="..\Nucleus.Threading\Nucleus.Threading.csproj" />
+    <ProjectReference Include="..\Nucleus.Timing\Nucleus.Timing.csproj" />
+    <ProjectReference Include="..\Nucleus.Validation\Nucleus.Validation.csproj" />
+  </ItemGroup>
+
+</Project>
